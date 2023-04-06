@@ -53,7 +53,7 @@ compressor = TextCompressor(text)
 Call the compress() method with a list of techniques to apply:
 
 ```python
-compressed_text = compressor.compress(techniques=['tokenize_and_remove_stopwords', 'lemmatize', 'lexrank_summarize'])
+compressed_text = compressor.compress(techniques=['remove_stopwords_and_tokenize','generate_paraphrase','generate_summary'])
 print(compressed_text)
 ```
 
@@ -66,10 +66,10 @@ print(compressed_text)
 
 ## Available techniques:
 
-- **tokenize_and_remove_stopwords**: Tokenize the text and remove stopwords.
+- **remove_stopwords_and_tokenize**: Tokenize the text and remove stopwords.
 
-- **lemmatize**: Lemmatize the text.
+- **apply_lemmatization**: Lemmatize the text.
 
-- **paraphrase**: Paraphrase the text using TextBlob.
+- **generate_paraphrase**: Paraphrase the text using TextBlob.
 
-- **lexrank_summarize**: Summarize the text using the LexRank algorithm from the sumy library.
+- **generate_summary**: Summarize the text using the LexRank algorithm from the sumy library.
