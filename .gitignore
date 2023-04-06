@@ -1,0 +1,8 @@
+.pyc
+/env
+/dist
+/build
+/nltk_data
+.DS_Store
+/text_compress.egg-info
+*.pyc
