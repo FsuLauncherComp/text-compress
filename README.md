@@ -1,6 +1,10 @@
 # TextCompress
 This package provides a Python class named TextCompressor for compressing text using various natural language processing techniques, including tokenization and stopword removal, lemmatization, paraphrasing, and summarization.
 
+# Motivation
+
+Working with LLMs for Embeddings, I found much of the raw documents/pages I was passing into the context of my prompts generally contained a lot unneccesary text that didn't contribute to the overal meaning of the document/page. This increased the number of tokens being used in the context, which in turn increased the size of the embeddings. I wanted to find a way to reduce the size of the embeddings without losing the meaning of the document/page. This package is very basic first attempt.
+
 # Installation
 To install the text_compression package:
 
